@@ -1,0 +1,64 @@
+.header{
+    border:2px solid black ;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-left: 32.5%;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+img{
+    height:8em;
+}
+.innerDiv {
+    display: flex;
+    margin: 10px;
+}
+
+.event{
+    border: 2px solid black;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image {
+    width: 50%;
+}
+
+.info {
+    width: 50%;
+    text-align: left;
+    line-height: 2em;
+}
+
+.bookNow {
+    text-align: center;
+}
+
+.container_1{
+    border: 2px solid black;
+}
+
+.container_2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 968px) {
+    .container_2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container_2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
